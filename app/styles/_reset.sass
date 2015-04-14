@@ -1,0 +1,26 @@
+*
+	margin: 0
+	padding: 0
+	@include appearance(none)
+	border: none
+	+border-radius(0)
+
+input, select, textarea, button, a
+	outline: none
+	font-family: inherit
+	@include box-sizing(border-box)
+
+textarea
+	-webkit-overflow-scrolling: touch
+
+html, body
+	height: 100%
+
+body
+	zoom: 1
+	position: relative
+	width: 100
+
+button
+	margin: 0
+	cursor: pointer
