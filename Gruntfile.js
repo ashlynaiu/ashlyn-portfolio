@@ -8,7 +8,6 @@
 // 'test/spec/**/*.js'
 
 module.exports = function (grunt) {
-
   // Load grunt tasks automatically
   require('load-grunt-tasks')(grunt);
 
@@ -63,6 +62,20 @@ module.exports = function (grunt) {
       }
     },
 
+    iconizr: {
+      options: {
+        dims: true,
+        recursive: false,
+        render: {
+          css: false,
+          scss: ['sass/']
+        }
+      },
+      build: {
+        src: ['<%= yeoman.app %>/images/svg'],
+        dest: '<%= yeoman.app %>/images/svg-output'
+      },
+    },
     // The actual grunt server settings
     connect: {
       options: {

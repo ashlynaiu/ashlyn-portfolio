@@ -1,0 +1,15 @@
+%svg {
+	background-repeat: no-repeat;
+}
+
+.svg-homepage-down-arrow { 
+	background-position: 0 0;
+	@extend %svg;
+	background-image: url(icons/icons.png);
+}
+
+.svg-homepage-down-arrow-dims {
+	width: 77px;
+	height: 77px;
+}
+

@@ -75,8 +75,15 @@
   /* we target browsers that don't support preserve-3d and show just a standard image - no effect visible */
   position: relative
 
-.port-homepage-hero-text
-  width: 40%
-  height: 40%
-  top: 30% !important
-  left: 20% !important
+.port-view-homepage
+  &-hero-text
+    width: 40%
+    height: 40%
+    top: 30% !important
+    left: 20% !important
+    @include media(handhelds)
+      display: none !important
+
+  &-welcome-mobile
+    @include media(except-handhelds)
+      display: none

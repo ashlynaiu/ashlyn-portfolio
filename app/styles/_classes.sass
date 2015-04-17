@@ -1,3 +1,9 @@
+//Layout Styles
+.port-main-content
+  padding: 30px 20px 
+  max-width: 920px
+  @include media(above-small-screens)
+    padding: 20px
 a
   text-decoration: none
   color: $text-color
@@ -12,12 +18,14 @@ header
 
   ul
     margin: 20px
+    @include display-flex
+    justify-content: center
     li
       display: inline
       padding: 0 10px
-
-
-
+      a
+        &:hover
+          color: $secondary-text
 
 // bower:scss
 // endbower

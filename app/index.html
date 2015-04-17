@@ -12,7 +12,7 @@
   <!-- endbuild -->
   <!-- build:css(.tmp) styles/main.css -->
   <link rel="stylesheet" href="styles/all.css">
-  <script src="http://codyhouse.co/demo/parallax-hero-image/js/modernizr.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
   <!-- endbuild -->
 </head>
 <body ng-app="ashlynPortfolioApp">
@@ -22,19 +22,26 @@
 <header>
   <ul>
     <li><a href="">Projects</a></li>
+    <li><a href="">About Me</a></li>
     <li><a href="">Contact Me</a></li>
   </ul>
 </header>
+<div class="port-view-homepage">
   <div class="cd-background-wrapper">
     <figure class="cd-floating-background">
       <img src="/images/homepage-hero-back.jpg">
       <img src="/images/homepage-hero-middle.png">
-      <img class="port-homepage-hero-text" src="/images/homepage-hero-front.svg">
+      <img class="port-view-homepage-hero-text" src="/images/homepage-hero-front.svg">
       <!-- images here -->
     </figure>
   </div>
-
-
+  
+  <section class="port-main-content">
+    <div class="port-view-homepage-welcome-mobile">
+      <h2>Hey there! My name is Ashlyn and I am a Product Designer living near San Francisco</h2>
+    </div>
+  </section>
+</div>
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
 <script>
 !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
@@ -62,6 +69,7 @@ ga('send', 'pageview');
 <script src="scripts/controllers/main.js"></script>
 <script src="scripts/controllers/about.js"></script>
 <script src="scripts/misc/parallax.js"></script>
+<script src="scripts/misc/modernizr.js"></script>
 <!-- endbuild -->
 </body>
 </html>
