@@ -75,7 +75,21 @@
   /* we target browsers that don't support preserve-3d and show just a standard image - no effect visible */
   position: relative
 
++create-media(homepage-down-arrow, (middle, compressed, after))
+  no-op: 1
+
 .port-view-homepage
+  position: relative
+  +get-media(homepage-down-arrow, '.svg-homepage-down-arrow')
+  &::after
+    position: absolute
+    left: 46%
+    @include media(except-handhelds)
+      bottom: 0
+    @include media(handhelds, small-screens)
+      display: none
+      content: none
+
   &-hero-text
     width: 40%
     height: 40%
@@ -87,3 +101,6 @@
   &-welcome-mobile
     @include media(except-handhelds)
       display: none
+
+
+
