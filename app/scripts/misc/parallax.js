@@ -13,7 +13,7 @@ jQuery(document).ready(function($){
 	//detect if hero <img> has been loaded and evaluate its aspect-ratio
 	$('.cd-floating-background').find('img').eq(0).load(function() {
 		aspectRatio = $(this).width()/$(this).height();
-  		if( mediaQuery == 'web' && $('html').hasClass('preserve-3d') ) initBackground();
+  		if( mediaQuery === 'web' && $('html').hasClass('preserve-3d') ) initBackground();
 	}).each(function() {
 		//check if image was previously load - if yes, trigger load event
   		if(this.complete) $(this).load();
@@ -21,7 +21,7 @@ jQuery(document).ready(function($){
 	
 	//detect mouse movement
 	$('.cd-background-wrapper').on('mousemove', function(event){
-		if( mediaQuery == 'web' && $('html').hasClass('preserve-3d') ) {
+		if( mediaQuery === 'web' && $('html').hasClass('preserve-3d') ) {
 			window.requestAnimationFrame(function(){
 				moveBackground(event);
 			});
@@ -31,7 +31,7 @@ jQuery(document).ready(function($){
 	//on resize - adjust .cd-background-wrapper and .cd-floating-background dimentions and position
 	$(window).on('resize', function(){
 		mediaQuery = window.getComputedStyle(document.querySelector('.cd-background-wrapper'), '::before').getPropertyValue('content').replace(/"/g, '');
-		if( mediaQuery == 'web' && $('html').hasClass('preserve-3d') ) {
+		if( mediaQuery === 'web' && $('html').hasClass('preserve-3d') ) {
 			window.requestAnimationFrame(function(){
 				halfWindowH = $(window).height()*0.5,
 				halfWindowW = $(window).width()*0.5;

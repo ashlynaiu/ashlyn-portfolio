@@ -26,22 +26,7 @@
     <li><a href="">Contact Me</a></li>
   </ul>
 </header>
-<div class="port-view-homepage">
-  <div class="cd-background-wrapper">
-    <figure class="cd-floating-background">
-      <img src="/images/homepage-hero-back.jpg">
-      <img src="/images/homepage-hero-middle.png">
-      <img class="port-view-homepage-hero-text" src="/images/homepage-hero-front.svg">
-      <!-- images here -->
-    </figure>
-  </div>
-  
-  <section class="port-main-content">
-    <div class="port-view-homepage-welcome-mobile">
-      <h2>Hey there! My name is Ashlyn and I am a Product Designer living near San Francisco</h2>
-    </div>
-  </section>
-</div>
+<div ng-view></div>
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
 <script>
 !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
@@ -61,6 +46,7 @@ ga('send', 'pageview');
 <script src="bower_components/angular-route/angular-route.js"></script>
 <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
 <script src="bower_components/angular-touch/angular-touch.js"></script>
+<script src="bower_components/modernizr/modernizr.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 
@@ -68,8 +54,7 @@ ga('send', 'pageview');
 <script src="scripts/app.js"></script>
 <script src="scripts/controllers/main.js"></script>
 <script src="scripts/controllers/about.js"></script>
-<script src="scripts/misc/parallax.js"></script>
-<script src="scripts/misc/modernizr.js"></script>
+<script src="scripts/controllers/portal.js"></script>
 <!-- endbuild -->
 </body>
 </html>

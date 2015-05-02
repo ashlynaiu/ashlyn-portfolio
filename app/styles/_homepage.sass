@@ -79,16 +79,16 @@
   no-op: 1
 
 .port-view-homepage
-  position: relative
-  +get-media(homepage-down-arrow, '.svg-homepage-down-arrow')
-  &::after
-    position: absolute
-    left: 46%
-    @include media(except-handhelds)
-      bottom: 0
-    @include media(handhelds, small-screens)
-      display: none
-      content: none
+  &-header
+    position: relative
+    +get-media(homepage-down-arrow, '.svg-homepage-down-arrow')
+    &::after
+      position: absolute
+      left: 46%
+      bottom: -44px
+      @include media(handhelds, small-screens)
+        display: none
+        content: none
 
   &-hero-text
     width: 40%
@@ -98,9 +98,6 @@
     @include media(handhelds)
       display: none !important
 
-  &-welcome-mobile
-    @include media(except-handhelds)
-      display: none
 
 
 
