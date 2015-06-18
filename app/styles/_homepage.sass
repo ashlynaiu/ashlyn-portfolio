@@ -79,6 +79,16 @@
   no-op: 1
 
 .port-view-homepage
+  h2
+    text-align: center
+    margin-bottom: 30px
+
+  .port-main-content--columns
+    max-width: 600px
+    padding-bottom: 30px
+    margin-bottom: 30px
+    border-bottom: 1px solid $secondary-text
+
   &-header
     position: relative
     +get-media(homepage-down-arrow, '.svg-homepage-down-arrow')
@@ -97,6 +107,21 @@
     left: 20% !important
     @include media(handhelds)
       display: none !important
+
+  &-projects
+    padding-top: 60px
+    img
+      width: 130px
+      height: 130px
+    .port-main-column--large
+      h3
+        font-size: 25px
+        margin-bottom: 8px
+        font-weight: bold
+      p
+        margin-bottom: 20px
+        font-size: 18px
+        line-height: 26px
 
 
 

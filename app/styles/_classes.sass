@@ -1,13 +1,69 @@
-//Layout Styles
+//////////////////////////
+///////Layout Styles/////
+////////////////////////
+%port-main-column
+  +media(above-small-screens)
+    width: 48%
+
+%port-main-column--small
+  +media(above-small-screens)
+    width: 28%
+
+%port-main-column--thirds
+  +media(above-small-screens)
+    width: 31%
+
+%port-main-column--large
+  +media(above-small-screens)
+    width: 68%
+
 .port-main-content
   padding: 30px 20px 
   max-width: 920px
   margin: 0 auto
-  @include media(above-small-screens)
+  +media(above-small-screens)
     padding: 20px
+
+.port-main-content--columns
+  @extend .port-main-content
+  +media(above-small-screens)
+    +display-flex
+    justify-content: space-between
+
+///Standard Two Columns////
+.port-main-left-column
+  @extend %port-main-column
+
+.port-main-right-column
+  @extend %port-main-column
+
+///1:3 Ratio Columns////
+.port-main-column--small
+  @extend %port-main-column--small
+
+.port-main-column--large
+  @extend %port-main-column--large
+
+///Three Columns////
+.port-main-left-column--thirds
+  @extend %port-main-column--thirds
+
+.port-main-middle-column--thirds
+  @extend %port-main-column--thirds
+
+.port-main-right-column--thirds
+  @extend %port-main-column--thirds
+
+
 a
   text-decoration: none
-  color: $text-color
+  color: $main-link-color
+  &:hover
+    text-decoration: underline
+
+///////////////////
+///////Header/////
+/////////////////
 
 header
   position: fixed
@@ -25,8 +81,32 @@ header
       display: inline
       padding: 0 10px
       a
+        color: $text-color
         &:hover
-          color: $secondary-text
+          color: $main-link-color
+
+///////////////////
+///////Footer/////
+/////////////////
++create-media(port-main-social)
+  no-op: 1 //needed since this won't be created if this is an empty field
+
+//Using a sass list and then iterating through it to create the media elements
+$social-icon: 'twitter', 'tumblr', 'linkedin'
+
+@each $social-icon in $social-icon 
+  .port-footer-#{$social-icon}
+    +get-media(port-main-social, '.svg-port-social-#{$social-icon }')
+footer
+  max-width: 920px
+  margin: 0 auto
+  ul
+    margin-bottom: 30px
+    @include display-flex
+    li
+      a
+        text-indent: -9999px
+        display: block
 
 // bower:scss
 // endbower
