@@ -29,6 +29,14 @@ angular
         templateUrl: 'views/portal.html',
         controller: 'PortalCtrl'
       })
+      .when('/homeslice', {
+        templateUrl: 'views/homeslice.html',
+        controller: 'HomesliceCtrl'
+      })
+      .when('/prelimb', {
+        templateUrl: 'views/prelimb.html',
+        controller: 'PrelimbCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
