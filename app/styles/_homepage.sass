@@ -78,6 +78,9 @@
 +create-media(homepage-down-arrow, (middle, compressed, after))
   no-op: 1
 
++create-media(port-triangle, (middle, standard, after))
+  no-op: 1
+
 .port-view-homepage
   h2
     text-align: center
@@ -123,6 +126,9 @@
         font-size: 18px
         line-height: 26px
         font-weight: 300
+      a
+        +get-media(port-triangle, '.svg-port-triangle')
+
 
 
 
