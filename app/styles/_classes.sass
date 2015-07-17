@@ -2,33 +2,31 @@
 ///////Layout Styles/////
 ////////////////////////
 %port-main-column
-  +media(above-small-screens)
+  +media(except-handhelds)
     width: 48%
 
 %port-main-column--small
-  +media(above-small-screens)
+  +media(except-handhelds)
     width: 28%
 
 %port-main-column--thirds
-  +media(above-small-screens)
+  +media(except-handhelds)
     width: 31%
 
 %port-main-column--large
-  +media(above-small-screens)
+  +media(except-handhelds)
     width: 68%
 
 .port-main-content
   padding: 30px 20px 
   max-width: 620px
   margin: 0 auto
-  img
-    margin-bott
-  +media(above-small-screens)
+  +media(except-handhelds)
     padding: 20px
 
 .port-main-content--columns
   @extend .port-main-content
-  +media(above-small-screens)
+  +media(except-handhelds)
     +display-flex
     justify-content: space-between
 
@@ -84,6 +82,10 @@ p
     @extend %port-main-img
     border-bottom: 1px solid #ececec
 
+.port-main-hide-image-moible
+  +media(handhelds)
+    display: none
+
 ///////////////////
 ///////Header/////
 /////////////////
@@ -133,12 +135,6 @@ header
 +create-media(port-main-social)
   no-op: 1 //needed since this won't be created if this is an empty field
 
-//Using a sass list and then iterating through it to create the media elements
-$social-icon: 'twitter', 'tumblr', 'linkedin'
-
-@each $social-icon in $social-icon 
-  .port-footer-#{$social-icon}
-    +get-media(port-main-social, '.svg-port-social-#{$social-icon }')
 footer
   max-width: 920px
   margin: 0 auto
@@ -154,8 +150,7 @@ footer
     li
       display: inline
       padding: 0 10px
-      a
-        text-indent: -9999px
+      a, i
         display: block
 
 // bower:scss

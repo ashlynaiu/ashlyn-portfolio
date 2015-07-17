@@ -1,8 +1,19 @@
+/////Hero Image Styles
 .cd-background-wrapper 
   background-color: #001426
   position: relative
   overflow: hidden
+  @include media(handhelds)
+    display: none
 
+.port-view-homepage-moible-intro
+  @include media(except-handhelds)
+    display: none
+
+.port-view-homepage-desktop-intro
+  @include media(handhelds)
+    display: none
+    
 .no-touch .cd-background-wrapper 
   -webkit-perspective: 4000px
   -moz-perspective: 4000px
@@ -88,8 +99,8 @@
 
   .port-main-content--columns
     max-width: 600px
-    padding-bottom: 30px
-    margin-bottom: 30px
+    padding-bottom: 45px
+    margin-bottom: 45px
     border-bottom: 1px solid $secondary-text
 
   &-header
@@ -116,11 +127,18 @@
     img
       width: 130px
       height: 130px
+      @include media(handhelds)
+        display: none
     .port-main-column--large
       h3
         font-size: 25px
         margin-bottom: 8px
         font-weight: 400
+        a
+          color: $text-color
+          &::after
+            content: ''
+            display: none
       p
         margin-bottom: 20px
         font-size: 18px

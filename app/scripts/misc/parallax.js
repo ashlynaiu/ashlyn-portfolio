@@ -1,4 +1,5 @@
 'use strict';
+
 jQuery(document).ready(function($){
 	//check media query
 	var mediaQuery = window.getComputedStyle(document.querySelector('.cd-background-wrapper'), '::before').getPropertyValue('content').replace(/"/g, ''),
