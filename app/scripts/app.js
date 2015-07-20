@@ -42,6 +42,6 @@ angular
         controller: 'PrelimbCtrl'
       })
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '#/'
       });
   });
