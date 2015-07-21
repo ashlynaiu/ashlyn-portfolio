@@ -16,6 +16,10 @@ angular
     'ngTouch'
   ])
   .config(function ($routeProvider, $locationProvider) {
+    $locationProvider.html5Mode({
+      enabled: true,
+      requireBase: false
+    });
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -44,10 +48,4 @@ angular
       .otherwise({
         redirectTo: '/'
       });
-      // enable html5Mode for pushstate ('#'-less URLs)
-      $locationProvider.html5Mode({
-        enabled: true,
-        requireBase: false
-      });
-      // $locationProvider.hashPrefix('!');
   });
