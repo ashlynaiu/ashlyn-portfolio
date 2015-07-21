@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "main": "app.js",
   "dependencies": {
+    "ejs": "^2.3.3",
     "express": "^4.13.1",
+    "express-logger": "0.0.3",
     "gzippo": "^0.2.0"
   },
   "repository": {},
@@ -42,6 +44,7 @@
     "node": "0.10.x"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
+    "start": "node web.js"
   }
 }
