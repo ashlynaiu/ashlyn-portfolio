@@ -1,7 +1,6 @@
 <!doctype html>
 <html class="no-js">
 <head>
-  <base href="/" />
   <meta charset="utf-8">
   <title></title>
   <meta name="description" content="">
@@ -14,6 +13,7 @@
   <link rel="stylesheet" href="styles/all.css">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
   <!-- endbuild -->
+  <base href="/" />
 </head>
 <body ng-app="ashlynPortfolioApp">
 <!--[if lt IE 7]>
@@ -25,7 +25,7 @@
     <li><a href="/about">About Me</a></li>
   </ul>
 </header>
-<div ng-view></div>
+<div ui-view></div>
 <footer>
   <div class="icr-main-footer">
     <ul>
@@ -45,18 +45,17 @@ r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
 ga('create', 'UA-XXXXX-X');
 ga('send', 'pageview');
 </script>
-
 <!-- build:js(.) scripts/vendor.js -->
 <!-- bower:js -->
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/angular-animate/angular-animate.js"></script>
-<script src="bower_components/angular-route/angular-route.js"></script>
 <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
 <script src="bower_components/angular-touch/angular-touch.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
-
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
 <script src="scripts/app.js"></script>
 <script src="scripts/controllers/main.js"></script>
 <script src="scripts/controllers/about.js"></script>

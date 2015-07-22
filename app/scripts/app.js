@@ -11,41 +11,43 @@
 angular
   .module('ashlynPortfolioApp', [
     'ngAnimate',
-    'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'ui.router'
   ])
-  .config(function ($routeProvider, $locationProvider) {
-    $locationProvider.html5Mode({
-      enabled: true
-    });
-    $locationProvider.hashPrefix('/');
-    $routeProvider
-      .when('/', {
+  .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
+    $locationProvider.html5Mode(true);
+
+    $urlRouterProvider.otherwise('/');
+    $stateProvider
+      .state('home', {
+        url: '/',
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-      .when('/about', {
+      .state('about', {
+        url: '/about',
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
       })
-      .when('/projects', {
+      .state('projects', {
+        url: '/projects',
         templateUrl: 'views/projects.html',
         controller: 'ProjectsCtrl'
       })
-      .when('/portal', {
+      .state('portal', {
+        url: '/portal',
         templateUrl: 'views/portal.html',
         controller: 'PortalCtrl'
       })
-      .when('/homeslice', {
+      .state('homeslice', {
+        url: '/homeslice',
         templateUrl: 'views/homeslice.html',
         controller: 'HomesliceCtrl'
       })
-      .when('/prelimb', {
+      .state('prelimb', {
+        url: '/prelimb',
         templateUrl: 'views/prelimb.html',
         controller: 'PrelimbCtrl'
-      })
-      .otherwise({
-        redirectTo: '/'
       });
   });
