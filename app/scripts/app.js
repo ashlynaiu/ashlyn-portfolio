@@ -16,10 +16,7 @@ angular
     'ui.router'
   ])
   .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
-    $locationProvider.html5Mode({
-      enabled: true,
-      requireBase: false
-    });
+    $locationProvider.html5Mode(true);
 
     $urlRouterProvider.otherwise('/');
     $stateProvider
