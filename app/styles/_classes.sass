@@ -113,21 +113,31 @@ header
 /////////////////////
 ////Header Image////
 ///////////////////
-.port-hero-image
-  background: url('/images/portal-hero.jpg') center center
+%port-hero-image
   display: block
-  background-repeat: none
   background-size: cover
   width: 100%
   height: 250px
   margin-bottom: 60px
-  &-wrapper
-    padding-top: 100px
-    max-width: 920px
-    margin: 0 auto
-    h1
-      text-align: center
-      color: #fff
+.port-hero-image-wrapper
+  padding-top: 100px
+  max-width: 920px
+  margin: 0 auto
+  h1
+    text-align: center
+    color: #fff
+
+.port-hero-image--portal
+  @extend %port-hero-image
+  background: url('/images/portal-hero.jpg') center center
+
+.port-hero-image--prelimb
+  @extend %port-hero-image
+  background: url('/images/prelimb-hero.jpg') center left
+
+.port-hero-image--homeslice
+  @extend %port-hero-image
+  background: url('/images/homeslice-hero.jpg') center left
 
 ///////////////////
 ///////Footer/////
