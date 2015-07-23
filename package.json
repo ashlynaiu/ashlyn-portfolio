@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "main": "app.js",
   "dependencies": {
+    "connect-modrewrite": "^0.8.1",
     "ejs": "^2.3.3",
     "express": "^4.13.1",
     "express-logger": "0.0.3",
