@@ -300,8 +300,8 @@ module.exports = function (grunt) {
     cssmin: {
       dist: {
         files: [{
-            src: ['styles/tmp/all.css'],
-            dest: 'styles/style.css'
+            src: ['<%= yeoman.dist %>/styles/tmp/all.css'],
+            dest: '<%= yeoman.dist %>/styles/style.css'
         }]
       }
     },
