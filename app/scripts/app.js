@@ -13,7 +13,8 @@ angular
     'ngAnimate',
     'ngSanitize',
     'ngTouch',
-    'ui.router'
+    'ui.router',
+    'ui.event'
   ])
   .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
     $locationProvider.html5Mode(true);
@@ -49,5 +50,10 @@ angular
         url: '/prelimb',
         templateUrl: 'views/prelimb.html',
         controller: 'PrelimbCtrl'
+      })
+      .state('sandbox', {
+        url: '/sandbox',
+        templateUrl: 'views/sandbox.html',
+        controller: 'SandboxCtrl'
       });
   });
