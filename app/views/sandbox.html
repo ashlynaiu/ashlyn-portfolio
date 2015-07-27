@@ -1,12 +1,18 @@
 <div class="port-view-sandbox">
     <section class="port-main-content">
         <h1>Sandbox Time</h1>
+        <p>Hey, welcome to my little sandbox where I'm working on tiny projects or code. This stuff is just for fun!</p>
         <h2>Contact me</h2>
-        <form>
-        <input type="text" placeholder="Name"/>
-        <input type="text" placeholder="Phone Number"/>
-        <input type="email" placeholder="Email"/>
-        <textarea placeholder="What's on your mind?"/>
+        <form class="port-main-form">
+            <div class="port-main-form-input-container">
+                <label for="name">Name</label>
+                <input type="text" id="name" ng-focus=""/>
+            </div>
+            <div class="port-main-form-input-container">
+                <label for="email">Email</label>
+                <input type="text" id="email" ng-focus=""/>
+            </div>
+            <textarea placeholder="What's on your mind?"/>
         </form>
     </section>
 </div>

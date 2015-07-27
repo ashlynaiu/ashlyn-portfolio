@@ -1,17 +1,12 @@
 'use strict';
+var Sandbox;
 
-/**
- * @ngdoc function
- * @name ashlynPortfolioApp.controller:PortalCtrl
- * @description
- * # PortalCtrl
- * Controller of the ashlynPortfolioApp
- */
-angular.module('ashlynPortfolioApp')
-  .controller('SandboxCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+Sandbox = (function() {
+    function Sandbox($scope, element) {
+    this.$scope = $scope;
+    }
+    Sandbox.prototype.focusClass = function() {
+
+    };
+)};
+angular.module('ashlynPortfolioApp').controller('SandboxCtrl', Sandbox);
