@@ -34,7 +34,7 @@ angular
         url: '',
         parent: 'frame',
         templateUrl: 'views/main.html',
-        controller: 'MainCtrl as frame'
+        controller: 'MainCtrl'
       })
       .state('about', {
         url: 'about',
