@@ -9,7 +9,7 @@
  */
 angular.module('ashlynPortfolioApp')
   .controller('ProjectsCtrl', function($scope, $http){
-    $http.get('scripts/json/project.json').success(function(data){
+    $http.get('/scripts/json/project.json').success(function(data){
       $scope.projects = data;
     });
 });
