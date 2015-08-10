@@ -1,0 +1,20 @@
+[
+    {
+        "name": "iCracked Member Dashboard",
+        "description": "AngularJS web application project requiring user experience design and front-end development.",
+        "url": "portal",
+        "image": "icracked"
+    },
+    {
+        "name": "Homeslice iOS and Android App",
+        "description": "Cross platform user experience and visual design implementation.",
+        "url": "homeslice",
+        "image": "homeslice"
+    },
+    {
+        "name": "Prelimb iOS App",
+        "description": "Augmented reality gardening application for the iPad requiring user experience design.",
+        "url": "prelimb",
+        "image": "prelimb"
+    }
+]

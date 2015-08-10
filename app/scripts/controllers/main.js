@@ -8,10 +8,8 @@
  * Controller of the ashlynPortfolioApp
  */
 angular.module('ashlynPortfolioApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+  .controller('MainCtrl', function($scope, $http){
+    $http.get('/scripts/json/project.json').success(function(data){
+      $scope.projects = data;
+    });
+});
