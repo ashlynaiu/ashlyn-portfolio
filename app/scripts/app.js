@@ -69,6 +69,7 @@ angular
       })
       .state('sandbox', {
         url: '/sandbox',
+        parent: 'frame',
         templateUrl: 'views/sandbox.html',
         controller: 'SandboxCtrl'
       });

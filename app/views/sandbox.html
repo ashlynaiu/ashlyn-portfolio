@@ -3,14 +3,27 @@
         <h1>Sandbox Time</h1>
         <p>Hey, welcome to my little sandbox where I'm working on tiny projects or code. This stuff is just for fun!</p>
         <h2>Contact me</h2>
-        <form class="port-main-form">
+        <form class="port-main-form" ng-controller="SandboxCtrl">
             <div class="port-main-form-input-container">
                 <label for="name">Name</label>
-                <input type="text" id="name" ng-focus=""/>
+                <input type="text" id="name" 
+                ng-model="user.name"
+                ui-event="{ focus: 'focusCallback()', blur: 'blurCallback()'}"
+                ng-class="modelStatus()" required/>
             </div>
             <div class="port-main-form-input-container">
                 <label for="email">Email</label>
-                <input type="text" id="email" ng-focus=""/>
+                <input type="text" id="email"
+                ng-model="user.email"
+                ui-event="{ focus: 'focusCallback()', blur: 'blurCallback()'}"
+                ng-class="modelStatus()"/>
+            </div>
+            <div class="port-main-form-input-container">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone"
+                ng-model="user.phone"
+                ui-event="{ focus: 'focusCallback()', blur: 'blurCallback()'}"
+                ng-class="modelStatus()"/>
             </div>
             <textarea placeholder="What's on your mind?"/>
         </form>
