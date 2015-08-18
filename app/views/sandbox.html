@@ -2,34 +2,38 @@
     <section class="port-main-content">
         <h1>Sandbox Time</h1>
         <p>Hey, welcome to my little sandbox where I'm working on tiny projects or code. This stuff is just for fun!</p>
-        <h2>Contact me</h2>
-        <form class="port-main-form" ng-controller="SandboxCtrl">
-            <div class="port-main-form-input-container"
-            ng-class='{ "has-focus": form.name.hasFocus, "has-success": form.name.$valid, "has-error": form.name.$invalid && (form.$submitted || form.name.$touched), "is-empty": !form.name.$viewValue }'>
-                <label for="name" ng-class="labelClass">Name</label>
-                <input type="text" id="name" 
-                ng-model="user.name" 
-                ng-focus='form.name.hasFocus=true'
-                ng-blur='form.name.hasFocus=false'
-                required/>
-            </div>
-            <div class="port-main-form-input-container"
-            ng-class='{ "has-focus": form.email.hasFocus, "has-success": form.email.$valid, "has-error": form.email.$invalid && (form.$submitted || form.email.$touched), "is-empty": !form.email.$viewValue }'>
-                <label for="email">Email</label>
-                <input type="text" id="email"
-                ng-model="user.email"
-                ng-focus='form.email.hasFocus=true'
-                ng-blur='form.email.hasFocus=false'/>
+        <hr class="port-main-divider"/>
+        <h2>Test contact form</h2>
+        <p>This contact form doesn't work yet. If you'd like to contact me, send me a message on <a href="https://www.linkedin.com/pub/ashlyn-aiu/42/56b/60a" target="_blank">LinkedIn!</a></p>
+        <form name="form" novalidate class="port-main-form">
+            <div class="port-main-form-input-container" 
+                    ng-class='{ "has-focus": form.name.hasFocus,
+                    "has-success": form.name.$valid,
+                    "has-error": form.name.$invalid && (form.$submitted || form.name.$touched),
+                    "is-empty": !form.name.$viewValue }'>
+                <label for="name">Name</label>
+                <input type="text" name="name" ng-model="user.name" required
+                    ng-focus='form.name.hasFocus=true', ng-blur='form.name.hasFocus=false'>
             </div>
             <div class="port-main-form-input-container" 
-            ng-class='{ "has-focus": form.phone.hasFocus, "has-success": form.phone.$valid, "has-error": form.phone.$invalid && (form.$submitted || form.phone.$touched), "is-empty": !form.phone.$viewValue }'>
-                <label for="phone">Phone</label>
-                <input type="tel" id="phone"
-                ng-model="user.phone"
-                ng-focus='form.phone.hasFocus=true'
-                ng-blur='form.phone.hasFocus=false'/>
+                    ng-class='{ "has-focus": form.email.hasFocus,
+                    "has-success": form.email.$valid,
+                    "has-error": form.email.$invalid && (form.$submitted || form.email.$touched),
+                    "is-empty": !form.email.$viewValue }'>
+                <label for="email">Email</label>
+                <input type="email" name="email" ng-model="user.email" required
+                    ng-focus='form.email.hasFocus=true', ng-blur='form.email.hasFocus=false'>
             </div>
-            <textarea placeholder="What's on your mind?"/>
+            <div class="port-main-form-input-container--label" 
+                    ng-class='{ "has-focus": form.message.hasFocus,
+                    "has-success": form.message.$valid,
+                    "has-error": form.message.$invalid && (form.$submitted || form.message.$touched),
+                    "is-empty": !form.message.$viewValue }'>
+                <label for="message">What's on your mind?</label>
+                <textarea name="message" ng-model="user.message" required
+                    ng-focus='form.message.hasFocus=true', ng-blur='form.message.hasFocus=false'/>
+            </div>
+            <button class="port-main-button">Send your message!</button>
         </form>
     </section>
 </div>

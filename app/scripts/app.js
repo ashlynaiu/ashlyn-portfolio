@@ -14,7 +14,8 @@ angular
     'ngSanitize',
     'ngTouch',
     'ui.router',
-    'ui.event'
+    'ui.event',
+    'ui.mask'
   ])
   .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
     $locationProvider.html5Mode(true);
@@ -68,7 +69,7 @@ angular
         controller: 'PrelimbCtrl'
       })
       .state('sandbox', {
-        url: '/sandbox',
+        url: 'sandbox',
         parent: 'frame',
         templateUrl: 'views/sandbox.html',
         controller: 'SandboxCtrl'
