@@ -7,9 +7,4 @@
                     &quot;is-empty&quot;: !form.email.$viewValue }"> <label for="email">Email</label> <input type="email" name="email" ng-model="user.email" required ng-focus="form.email.hasFocus=true" ng-blur="form.email.hasFocus=false"> </div> <div class="port-main-form-input-container--label" ng-class="{ &quot;has-focus&quot;: form.message.hasFocus,
                     &quot;has-success&quot;: form.message.$valid,
                     &quot;has-error&quot;: form.message.$invalid && (form.$submitted || form.message.$touched),
-                    &quot;is-empty&quot;: !form.message.$viewValue }"> <label for="message">What's on your mind?</label> <textarea name="message" ng-model="user.message" required ng-focus="form.message.hasFocus=true" ng-blur="form.message.hasFocus=false">
-            </div>
-            <button class="port-main-button">Send your message!</button>
-        </form>
-    </section>
-</div>
+                    &quot;is-empty&quot;: !form.message.$viewValue }"> <label for="message">What's on your mind?</label> <textarea name="message" ng-model="user.message" required ng-focus="form.message.hasFocus=true" ng-blur="form.message.hasFocus=false"></textarea> </div> <button class="port-main-button">Send your message!</button> </form> </section> </div>
