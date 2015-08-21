@@ -8,6 +8,7 @@
 <ui-view></ui-view>
 <footer>
   <div class="icr-main-footer">
+    <button ng-if="$state.current.name != 'home' && $state.current.name != 'projects' && $state.current.name != 'sandbox'" class="port-main-button" ui-sref="projects">Project List</button>
     <ul>
       <li><a href="https://github.com/ashlynaiu" target="_blank"><i class="svg-port-social-github"></i></a></li>
       <li><a href="https://twitter.com/ashlynaiu" target="_blank"><i class="svg-port-social-twitter"></i></a></li>

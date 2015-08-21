@@ -8,6 +8,6 @@
  * Controller of the ashlynPortfolioApp
  */
 angular.module('ashlynPortfolioApp')
-  .controller('SandboxCtrl', function($scope){
+  .controller('SandboxCtrl', function(){
     
 });

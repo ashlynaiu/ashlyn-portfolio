@@ -1,6 +1,11 @@
-//Working on service
-// ashlynPortfolioApp.factory('projectInfo', function($http) { 
-//    $http.get('scripts/json/project.json').success(function(data){
-//       $scope.projects = data;
-//     });    
-// });
+'use strict';
+angular.module('ashlynPortfolioApp').factory('projectInfo', function($http) { 
+    return{
+        items : function() {
+            return $http({
+                url: '/scripts/json/project.json',
+                method: 'GET'
+            });
+        }
+    };    
+});
