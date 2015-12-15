@@ -18,7 +18,7 @@
     width: 68%
 
 .port-main-content
-  padding: 30px 20px 
+  padding: 30px 20px
   max-width: 620px
   margin: 0 auto
   +media(except-handhelds)
@@ -150,9 +150,11 @@ footer
   margin: 0 auto
   display: block
   padding-bottom: 40px
-  .icr-main-footer 
+  .port-main-footer
     margin: 0 auto
     display: block
+    +media(except-handhelds)
+      padding: 0 20px
   ul
     @include display-flex
     justify-content: center
@@ -167,13 +169,13 @@ footer
 // bower:scss
 // endbower
 
-.browsehappy 
+.browsehappy
   margin: 0.2em 0
   background: #ccc
   color: #000
   padding: 0.2em 0
 
-body 
+body
   padding: 0
 
 ///////////////////////////
@@ -190,13 +192,16 @@ body
     border-bottom: 1px solid #C0B3C8
 
   &-projects
-    padding-top: 60px
+    +media(except-handhelds)
+      padding-top: 60px
+    +media(handhelds)
+      padding-top: 30px
     img
       width: 130px
       height: 130px
       @include media(handhelds)
         display: none
-        
+
     .port-main-column--large
       h3
         font-size: 25px
@@ -218,7 +223,7 @@ body
 //////////////////////////
 ///////Button Styles/////
 ////////////////////////
-%port-main-button-standard 
+%port-main-button-standard
   padding: 15px 30px
   font-size: 14px
   background-color: transparent
