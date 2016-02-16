@@ -74,6 +74,11 @@ angular
         parent: 'frame',
         templateUrl: 'views/sandbox.html',
         controller: 'SandboxCtrl'
+      })
+      .state('style-guide', {
+        url: 'style-guide',
+        parent: 'frame',
+        templateUrl: 'views/style-guide.html'
       });
   }).run(function($rootScope){
   $rootScope.$on('$stateChangeSuccess', function() {
