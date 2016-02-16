@@ -6,6 +6,12 @@
         "image": "icracked"
     },
     {
+        "name": "Custom Sass Framework",
+        "description": "Personal Sass framework that I continuously work on for quick side projects",
+        "url": "style-guide",
+        "image": "style-guide"
+    },
+    {
         "name": "Homeslice iOS and Android App",
         "description": "Cross platform user experience and visual design implementation.",
         "url": "homeslice",
