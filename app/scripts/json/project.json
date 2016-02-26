@@ -1,5 +1,11 @@
 [
     {
+        "name": "Skycal Web App",
+        "description": "Astronomical calendar side project, designed and built from scratch.",
+        "url": "skycal",
+        "image": "skycal"
+    },
+    {
         "name": "iCracked Member Dashboard",
         "description": "AngularJS web application project requiring user experience design and front-end development.",
         "url": "portal",

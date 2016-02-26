@@ -75,6 +75,11 @@ angular
         templateUrl: 'views/sandbox.html',
         controller: 'SandboxCtrl'
       })
+      .state('skycal', {
+        url: 'skycal',
+        parent: 'frame',
+        templateUrl: 'views/skycal.html'
+      })
       .state('style-guide', {
         url: 'style-guide',
         parent: 'frame',
