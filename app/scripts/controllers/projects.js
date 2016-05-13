@@ -10,6 +10,7 @@
 angular.module('ashlynPortfolioApp')
   .controller('ProjectsCtrl', function($scope, projectInfo){
     $scope.projects = [];
+
     projectInfo.items().success(function(data){
         $scope.projects = data;
     });

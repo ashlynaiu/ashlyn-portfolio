@@ -55,19 +55,19 @@ angular
         url: 'portal',
         parent: 'frame',
         templateUrl: 'views/portal.html',
-        controller: 'PortalCtrl'
+        controller: 'ProjectDetails'
       })
       .state('homeslice', {
         url: 'homeslice',
         parent: 'frame',
         templateUrl: 'views/homeslice.html',
-        controller: 'HomesliceCtrl'
+        controller: 'ProjectDetails'
       })
       .state('prelimb', {
         url: 'prelimb',
         parent: 'frame',
         templateUrl: 'views/prelimb.html',
-        controller: 'PrelimbCtrl'
+        controller: 'ProjectDetails'
       })
       .state('sandbox', {
         url: 'sandbox',
@@ -78,12 +78,14 @@ angular
       .state('skycal', {
         url: 'skycal',
         parent: 'frame',
-        templateUrl: 'views/skycal.html'
+        templateUrl: 'views/skycal.html',
+        controller: 'ProjectDetails'
       })
       .state('style-guide', {
         url: 'style-guide',
         parent: 'frame',
-        templateUrl: 'views/style-guide.html'
+        templateUrl: 'views/style-guide.html',
+        controller: 'ProjectDetails'
       });
   }).run(function($rootScope){
   $rootScope.$on('$stateChangeSuccess', function() {
