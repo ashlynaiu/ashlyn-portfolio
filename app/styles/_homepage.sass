@@ -7,7 +7,6 @@
     margin-bottom: 30px
 
 .port-view-homepage-header
-  height: 500px
   display: flex
   justify-content: center
   align-items: center
@@ -16,16 +15,22 @@
   text-align: center
 
   +media(except-handhelds)
-    height: 500px
+    height: 450px
+    h1
+      font-size: 60px
     h2
-      font-size: 28px
+      font-size: 35px
   +media(handhelds)
-    height: 300px
+    height: 250px
     padding: 0 20px
     h1
       font-size: 30px
     h2
       font-size: 22px
+
+  h1, h2
+    font-family: 'Pacifico', cursive
+    color: #fff
 
   +get-media(homepage-down-arrow, '.svg-homepage-down-arrow')
   &::after
@@ -38,9 +43,12 @@
 
 .port-view-homepage-header-line
   height: 2px
-  background-color: $text-color
+  background-color: #fff
   width: 60px
-  margin: 10px 0 25px 0
+  +media(handhelds)
+    margin: 0 0 10px 0
+  +media(except-handhelds)
+    margin: 20px 0 35px 0
   @include transition(all 0.3s ease-in-out)
 
   &.hover
