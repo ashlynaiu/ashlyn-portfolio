@@ -8,10 +8,11 @@
  * Controller of the ashlynPortfolioApp
  */
 angular.module('ashlynPortfolioApp')
-  .controller('ProjectsCtrl', function($scope, projectInfo){
+  .controller('ProjectsCtrl', function($scope, $http){
     $scope.projects = [];
 
-    projectInfo.items().success(function(data){
-        $scope.projects = data;
+   $http.get('/scripts/json/project.json')
+    .then(function(res){
+        $scope.projects = res.data;
     });
 });

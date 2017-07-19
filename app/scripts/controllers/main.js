@@ -7,13 +7,13 @@
  * # MainCtrl
  * Controller of the ashlynPortfolioApp
  */
-angular.module('ashlynPortfolioApp')
-  .controller('MainCtrl', function($scope, $state, projectInfo, $interval){
+angular.module('ashlynPortfolioApp').controller('MainCtrl', function($scope, $state, $interval, $http){
     $scope.projects = [];
     $scope.state = $state;
 
-    projectInfo.items().success(function(data){
-        $scope.projects = data;
+    $http.get('/scripts/json/project.json')
+    .then(function(res){
+        $scope.projects = res.data;
     });
 
     $scope.changeBackground = function() {
