@@ -1,0 +1,185 @@
+////////////////////
+/////Variables/////
+//////////////////
+
+$desktop-padding: 20px
+$frame-desktop: 820px
+$text-color-standard: #5B6675
+$secondary-text: #745486
+$main-link-color: #745486
+$background-color: #FFF
+
+/////////////////
+/////Resets/////
+///////////////
+*
+  margin: 0
+  padding: 0
+  border: none
+  border-radius: none
+
+html, body
+  height: 100%
+  font-family: 'Source Sans Pro', sans-serif
+  background-color: $background-color
+  color: $text-color-standard
+
+input, select, textarea, button, a
+  outline: none
+  font-family: inherit
+  box-sizing: border-box
+
+textarea
+  -webkit-overflow-scrolling: touch
+
+body
+  zoom: 1
+  position: relative
+  width: 100
+
+button
+  padding: 8px 16px
+  cursor: pointer
+  border-radius: 4px
+  background-color: #fff
+  color: $background-color
+  font-size: 16px
+
+h1
+  font-size: 50px
+  line-height: 52px
+  font-weight: 300
+  margin-bottom: 20px
+  -webkit-font-smoothing: antialiased
+
+h2
+  font-size: 35px
+  line-height: 45px
+  font-weight: 300
+  margin-bottom: 20px
+  -webkit-font-smoothing: antialiased
+
+h3
+  font-size: 22px
+  line-height: 28px
+  font-weight: 400
+  margin-bottom: 20px
+  -webkit-font-smoothing: antialiased
+
+h4
+  font-size: 20px
+  line-height: 26px
+  font-weight: 400
+  margin-bottom: 10px
+  -webkit-font-smoothing: antialiased
+
+a
+  color: $text-color-standard
+  img
+    outline-color: none
+  &:hover
+    text-decoration: none
+
+p
+  font-size: 16px
+  line-height: 24px
+
+////////////////////////
+///////Main Layout/////
+//////////////////////
+.mainContent
+  max-width: $frame-desktop
+  margin: 40px auto
+
+///////////////////
+///////Header/////
+/////////////////
+header
+  width: 100%
+  background: rgba(255, 255, 255, 0.6)
+  z-index: 10
+  border-bottom: 1px solid #F4F4F4
+
+  ul
+    margin: 20px
+    display: flex
+    justify-content: center
+    li
+      display: inline
+      padding: 0 10px
+      a
+        color: $text-color-standard
+        text-decoration: none
+        &:hover
+          color: $main-link-color
+
+/////////////////
+/////Footer/////
+///////////////
+
+// +create-media(port-main-social)
+//   no-op: 1 //needed since this won't be created if this is an empty field
+
+footer
+  max-width: $frame-desktop
+  margin: 0 auto
+  display: block
+  padding-bottom: 40px
+  ul
+    dislay: flex
+    justify-content: center
+    align-content: center
+    margin-top: 30px
+    li
+      display: inline
+      padding: 0 10px
+      a, i
+        display: block
+
+//////////////////
+///////Home/////
+///////////////
+.homeTitle
+  font-family: 'EB Garamond', serif
+  text-align: center
+
+$poly-width: 220px
+
+.hexagon
+  transform: rotate(120deg)
+  cursor: pointer
+  height: ($poly-width *2)
+  overflow: hidden
+  visibility: hidden
+  width: $poly-width
+
+.hex1
+  transform: rotate(-60deg)
+  height: 100%
+  overflow: hidden
+  width: 100%
+
+
+.hex2
+  transform: rotate(-60deg)
+  height: 100%
+  position: relative
+  visibility: visible
+  width: 100%
+
+.desc
+  color: white
+  font-size: 1.5em
+  font-weight: 300
+  height: ($poly-width * 2)
+  line-height: 1.5em
+  position: absolute
+  text-align: center
+  text-transform: uppercase
+  visibility: visible
+  width: $poly-width
+  background-color: red
+  h2
+    margin: ($poly-width - ($poly-width / 4)) 20px 0 20px
+  p
+    font-size: .5em; text-transform: lowercase
