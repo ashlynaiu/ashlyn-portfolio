@@ -9,20 +9,16 @@ class Home extends Component {
     };
 
     return (
-      <div className="homeTitle mainContent">
-        <h1>Hey there, my name is Ashlyn.</h1>
-        <h2>I'm a Product Designer in San Francisco.</h2>
-        <div className="projectContainer">
-            <div className="hexagon">
-              <div className="hex1">
-                <div className="hex2" style={styles}>
-                  <div className="desc">
-                    <h2>Welcome this is an epic title</h2>
-                    <p>website</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <div className="mainContent">
+        <div className="leftPanel">
+          <h1>Ashlyn Aiu</h1>
+        </div>
+        <div className="rightPanel">
+          <h2>Product Designer <br />
+          in San Francsico</h2>
+        </div>
+        <div className="firstHero">
+          <img src={require(`../images/hero_action_plans.png`)} />
         </div>
       </div>
     );

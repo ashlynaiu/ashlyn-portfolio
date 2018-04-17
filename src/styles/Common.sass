@@ -87,9 +87,9 @@ p
 ////////////////////////
 ///////Main Layout/////
 //////////////////////
-.mainContent
-  max-width: $frame-desktop
-  margin: 40px auto
+// .mainContent
+//   max-width: $frame-desktop
+//   margin: 40px auto
 
 ///////////////////
 ///////Header/////
@@ -139,47 +139,39 @@ footer
 //////////////////
 ///////Home/////
 ///////////////
-.homeTitle
-  font-family: 'EB Garamond', serif
-  text-align: center
-
-$poly-width: 220px
-
-.hexagon
-  transform: rotate(120deg)
-  cursor: pointer
-  height: ($poly-width *2)
-  overflow: hidden
-  visibility: hidden
-  width: $poly-width
-
-.hex1
-  transform: rotate(-60deg)
-  height: 100%
-  overflow: hidden
+html, body, .mainContainer, .mainContent, #root
   width: 100%
-
-
-.hex2
-  transform: rotate(-60deg)
   height: 100%
+
+.mainContent
   position: relative
-  visibility: visible
-  width: 100%
 
-.desc
-  color: white
-  font-size: 1.5em
-  font-weight: 300
-  height: ($poly-width * 2)
-  line-height: 1.5em
+.leftPanel
+  width: 60%
+  height: 100%
   position: absolute
-  text-align: center
-  text-transform: uppercase
-  visibility: visible
-  width: $poly-width
-  background-color: red
+  left: 0
+  padding: 80px 25px
+  
+  h1
+    color: #2C1D39
+    text-align: right
+    font-size: 60px
+
+.rightPanel
+  padding: 80px 25px
+  width: 40%
+  height: 100%
+  position: absolute
+  right: 0
+  background-color: #2C1D39
+  
   h2
-    margin: ($poly-width - ($poly-width / 4)) 20px 0 20px
-  p
-    font-size: .5em; text-transform: lowercase
+    color: #fff
+
+.firstHero
+  z-index: 2
+  position: absolute
+  top: 500px
+  img
+    width: 80%
