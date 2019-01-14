@@ -1,25 +1,27 @@
 import React, { Component } from 'react';
-
+import data from './models'
+import Project from 'Project'
 class Home extends Component {
   render() {
-    var styles = {
-      background:'red',
-      backgroundPosition:'center',
-      backgroundRepeat:'no-repeat'
-    };
 
     return (
       <div className="mainContent">
-        <div className="leftPanel">
-          <h1>Ashlyn Aiu</h1>
+        <div className="port-view-homepage-header" id="header-animation">
+          <h1>Hey, my name is Ashlyn</h1>
+          <div class="port-view-homepage-header-line"></div>
+          <h2>Product Designer in San Francisco</h2>
         </div>
-        <div className="rightPanel">
-          <h2>Product Designer <br />
-          in San Francsico</h2>
-        </div>
-        <div className="firstHero">
-          <img src={require(`../images/hero_action_plans.png`)} />
-        </div>
+        <section className="port-main-content port-project-layout">
+          <div className="port-project-layout-projects">
+          {Object
+            .keys(data)
+            .map(key => <Project
+                key={key}
+                index={key}
+                card={data[key]}/>)
+          }
+          </div>
+        </section>
       </div>
     );
   }
