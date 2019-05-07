@@ -8,6 +8,7 @@ $text-color-standard: #5B6675
 $secondary-text: #745486
 $main-link-color: #745486
 $background-color: #FFF
+$break-medium: 1000px
 
 /////////////////
 /////Resets/////
@@ -18,11 +19,18 @@ $background-color: #FFF
   border: none
   border-radius: none
 
-html, body
+body
+  zoom: 1
+
+#root
   height: 100%
-  font-family: 'Source Sans Pro', sans-serif
-  background-color: $background-color
+
+html, body
+  min-height: 100%
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
   color: $text-color-standard
+  background: linear-gradient(180deg, #b9deed, #efefef)
+  background-repeat: no-repeat
 
 input, select, textarea, button, a
   outline: none
@@ -32,10 +40,6 @@ input, select, textarea, button, a
 textarea
   -webkit-overflow-scrolling: touch
 
-body
-  zoom: 1
-  position: relative
-  width: 100
 
 button
   padding: 8px 16px
@@ -46,18 +50,19 @@ button
   font-size: 16px
 
 h1
-  font-size: 50px
-  line-height: 52px
+  font-size: 8vw
+  line-height: 120%
   font-weight: 300
   margin-bottom: 20px
-  -webkit-font-smoothing: antialiased
 
 h2
-  font-size: 35px
-  line-height: 45px
+  font-size: 3vw
+  line-height: 120%
   font-weight: 300
   margin-bottom: 20px
   -webkit-font-smoothing: antialiased
+  @media only screen and (max-width: $break-medium - 1)
+    font-size: 4vw
 
 h3
   font-size: 22px
@@ -81,52 +86,35 @@ a
     text-decoration: none
 
 p
-  font-size: 16px
-  line-height: 24px
+  font-size: 20px
+  line-height: 150%
+  font-weight: 300
+  margin-bottom: 20px
+  @media only screen and (max-width: $break-medium - 1)
+    font-size: 16px
 
-////////////////////////
-///////Main Layout/////
-//////////////////////
-// .mainContent
-//   max-width: $frame-desktop
-//   margin: 40px auto
+.mainContainer
+  height: 100%
 
-///////////////////
-///////Header/////
-/////////////////
-header
-  width: 100%
-  background: rgba(255, 255, 255, 0.6)
-  z-index: 10
-  border-bottom: 1px solid #F4F4F4
+.mainContent
+  background: #fff
+  width: 60%
+  margin: 3rem auto
+  padding: 3rem
+  box-shadow: 0px 0px 36px 0px rgba(0,9,56,0.28)
+  @media only screen and (max-width: $break-medium - 1)
+    margin: 2rem auto
+    padding: 2rem
+    width: 70%
 
-  ul
-    margin: 20px
-    display: flex
-    justify-content: center
-    li
-      display: inline
-      padding: 0 10px
-      a
-        color: $text-color-standard
-        text-decoration: none
-        &:hover
-          color: $main-link-color
 
-/////////////////
-/////Footer/////
-///////////////
-
-// +create-media(port-main-social)
-//   no-op: 1 //needed since this won't be created if this is an empty field
+.first
+  padding-top: 20px
+  border-top: 1px solid #000938
 
 footer
-  max-width: $frame-desktop
-  margin: 0 auto
-  display: block
-  padding-bottom: 40px
   ul
-    dislay: flex
+    display: flex
     justify-content: center
     align-content: center
     margin-top: 30px
@@ -135,43 +123,3 @@ footer
       padding: 0 10px
       a, i
         display: block
-
-//////////////////
-///////Home/////
-///////////////
-html, body, .mainContainer, .mainContent, #root
-  width: 100%
-  height: 100%
-
-.mainContent
-  position: relative
-
-.leftPanel
-  width: 60%
-  height: 100%
-  position: absolute
-  left: 0
-  padding: 80px 25px
-  
-  h1
-    color: #2C1D39
-    text-align: right
-    font-size: 60px
-
-.rightPanel
-  padding: 80px 25px
-  width: 40%
-  height: 100%
-  position: absolute
-  right: 0
-  background-color: #2C1D39
-  
-  h2
-    color: #fff
-
-.firstHero
-  z-index: 2
-  position: absolute
-  top: 500px
-  img
-    width: 80%

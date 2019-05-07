@@ -4,11 +4,18 @@
   border: none;
   border-radius: none; }
 
+body {
+  zoom: 1; }
+
+#root {
+  height: 100%; }
+
 html, body {
-  height: 100%;
-  font-family: 'Source Sans Pro', sans-serif;
-  background-color: #FFF;
-  color: #5B6675; }
+  min-height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #5B6675;
+  background: linear-gradient(180deg, #b9deed, #efefef);
+  background-repeat: no-repeat; }
 
 input, select, textarea, button, a {
   outline: none;
@@ -17,11 +24,6 @@ input, select, textarea, button, a {
 
 textarea {
   -webkit-overflow-scrolling: touch; }
-
-body {
-  zoom: 1;
-  position: relative;
-  width: 100; }
 
 button {
   padding: 8px 16px;
@@ -32,18 +34,20 @@ button {
   font-size: 16px; }
 
 h1 {
-  font-size: 50px;
-  line-height: 52px;
+  font-size: 8vw;
+  line-height: 120%;
   font-weight: 300;
-  margin-bottom: 20px;
-  -webkit-font-smoothing: antialiased; }
+  margin-bottom: 20px; }
 
 h2 {
-  font-size: 35px;
-  line-height: 45px;
+  font-size: 3vw;
+  line-height: 120%;
   font-weight: 300;
   margin-bottom: 20px;
   -webkit-font-smoothing: antialiased; }
+  @media only screen and (max-width: 999px) {
+    h2 {
+      font-size: 4vw; } }
 
 h3 {
   font-size: 22px;
@@ -67,77 +71,43 @@ a {
     text-decoration: none; }
 
 p {
-  font-size: 16px;
-  line-height: 24px; }
+  font-size: 20px;
+  line-height: 150%;
+  font-weight: 300;
+  margin-bottom: 20px; }
+  @media only screen and (max-width: 999px) {
+    p {
+      font-size: 16px; } }
 
-header {
-  width: 100%;
-  background: rgba(255, 255, 255, 0.6);
-  z-index: 10;
-  border-bottom: 1px solid #F4F4F4; }
-  header ul {
-    margin: 20px;
-    display: flex;
-    justify-content: center; }
-    header ul li {
-      display: inline;
-      padding: 0 10px; }
-      header ul li a {
-        color: #5B6675;
-        text-decoration: none; }
-        header ul li a:hover {
-          color: #745486; }
-
-footer {
-  max-width: 820px;
-  margin: 0 auto;
-  display: block;
-  padding-bottom: 40px; }
-  footer ul {
-    dislay: flex;
-    justify-content: center;
-    align-content: center;
-    margin-top: 30px; }
-    footer ul li {
-      display: inline;
-      padding: 0 10px; }
-      footer ul li a, footer ul li i {
-        display: block; }
-
-html, body, .mainContainer, .mainContent, #root {
-  width: 100%;
+.mainContainer {
   height: 100%; }
 
 .mainContent {
-  position: relative; }
-
-.leftPanel {
+  background: #fff;
   width: 60%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  padding: 80px 25px; }
-  .leftPanel h1 {
-    color: #2C1D39;
-    text-align: right;
-    font-size: 60px; }
+  margin: 3rem auto;
+  padding: 3rem;
+  box-shadow: 0px 0px 36px 0px rgba(0, 9, 56, 0.28); }
+  @media only screen and (max-width: 999px) {
+    .mainContent {
+      margin: 2rem auto;
+      padding: 2rem;
+      width: 70%; } }
 
-.rightPanel {
-  padding: 80px 25px;
-  width: 40%;
-  height: 100%;
-  position: absolute;
-  right: 0;
-  background-color: #2C1D39; }
-  .rightPanel h2 {
-    color: #fff; }
+.first {
+  padding-top: 20px;
+  border-top: 1px solid #000938; }
 
-.firstHero {
-  z-index: 2;
-  position: absolute;
-  top: 500px; }
-  .firstHero img {
-    width: 80%; }
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 30px; }
+  footer ul li {
+    display: inline;
+    padding: 0 10px; }
+    footer ul li a, footer ul li i {
+      display: block; }
 
 .svg-port-triangle, .svg-homepage-down-arrow, .svg-homepage-go-arrow, .svg-port-social-tumblr, .svg-port-social-twitter, .svg-port-social-linkedin, .svg-port-social-github, .svg-port-social-dribbble {
   background-repeat: no-repeat; }
