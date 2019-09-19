@@ -12,6 +12,7 @@ body {
 
 html, body {
   min-height: 100%;
+  height: 100%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   color: #5B6675;
   background: linear-gradient(180deg, #b9deed, #efefef);
