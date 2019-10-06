@@ -6,7 +6,6 @@ import Footer from './Footer';
 class Home extends Component {
   render() {
     return (
-      <div className="mainContent">
         <div className="homepage" id="header-animation">
           <h1>Ashlyn Aiu</h1>
           <h2>Product Designer and UX/UI Engineer</h2>
@@ -14,8 +13,6 @@ class Home extends Component {
 
           <p>My portfolio is currently being rebuilt. You can check out my <a href="https://github.com/ashlynaiu" target="_blank" rel="noopener noreferrer">github</a> for some current projects I'm working on.</p>
         </div>
-        <Footer></Footer>
-      </div>
     );
   }
 }
