@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
-import Home from './components/Home';
-import Unstructured from './components/Unstructured';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+//import ScrollToTop from './helpers/ScrollToTop';
+
 import Footer from './components/Footer';
 import Nav from './components/Nav';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+
+import Home from './components/Home';
+import Unstructured from './components/Unstructured';
+import Timeline from './components/Timeline';
 
 class App extends Component {
   constructor(props) {
@@ -23,13 +27,13 @@ class App extends Component {
     return (
       <div className="mainContainer">
         <Router>
-          <ScrollToTop>
           <div className="mainContent">
+            
             <Route exact={true} path="/" component={Home} />
             <Route path="/unstructured" component={() => <Unstructured changePageState={this.changePageState}/>} />
+            <Route path="/timeline" component={() => <Timeline changePageState={this.changePageState}/>} />
           </div>
           <Nav changePageState={this.changePageState} page={this.state.page} />
-          </ScrollToTop>
         </Router>
         <Footer />
       </div>

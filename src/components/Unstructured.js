@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 
 class Unstructured extends Component {
-
   render() {
     return (
-      <div className="homepage">
+      <div className="unstructured">
         <h1>Ashlyn Aiu</h1>
         <h2>Unstructured to Structured Data in Quip</h2>
 
