@@ -8,6 +8,7 @@ import Nav from './components/Nav';
 import Home from './components/Home';
 import Unstructured from './components/Unstructured';
 import Timeline from './components/Timeline';
+import ActionPlans from './components/ActionPlans';
 
 class App extends Component {
   constructor(props) {
@@ -32,6 +33,7 @@ class App extends Component {
             <Route exact={true} path="/" component={Home} />
             <Route path="/unstructured" component={() => <Unstructured changePageState={this.changePageState}/>} />
             <Route path="/timeline" component={() => <Timeline changePageState={this.changePageState}/>} />
+            <Route path="/action-plan" component={() => <ActionPlans changePageState={this.changePageState}/>} />
           </div>
           <Nav changePageState={this.changePageState} page={this.state.page} />
         </Router>

@@ -6,7 +6,7 @@ $desktop-padding: 20px
 $frame-desktop: 820px
 $text-color-standard: #5B6675
 $secondary-text: #745486
-$main-link-color: #745486
+$main-link-color: #AE66FF
 $background-color: #FFF
 $break-medium: 1000px
 
@@ -69,6 +69,7 @@ h3
   line-height: 28px
   font-weight: 400
   margin-bottom: 14px
+  color: $main-link-color
   -webkit-font-smoothing: antialiased
 
 h4
@@ -92,7 +93,8 @@ p
   margin-bottom: 20px
   @media only screen and (max-width: $break-medium - 1)
     font-size: 16px
-
+  b
+    color: $main-link-color
 ul
   margin-bottom: 20px
   padding-left: 20px
@@ -100,6 +102,10 @@ ul
     font-size: 18px
     line-height: 150%
     font-weight: 300
+
+img
+  width: 100%
+  margin-bottom: 26px
 
 .mainContainer
   height: 100%
@@ -113,14 +119,29 @@ ul
     width: 70%
 
 
-.first
+.first, nav
   padding-top: 20px
   margin-top: 20px
-  border-top: 1px solid #000938
+  border-top: 1px solid $main-link-color
 
 .project-details
   p
     margin-bottom: 8px
+
+.gif-container
+  display: flex
+  justify-content: center
+  img
+    width: 80%
+    @media only screen and (max-width: $break-medium - 1)
+      width: 100%
+
+.photo-grid
+  .row
+    display: flex
+    justify-content: space-between
+    img
+      width: 48%
 
 footer
   ul
@@ -133,3 +154,4 @@ footer
       padding: 0 10px
       a, i
         display: block
+        color: #AE66FF

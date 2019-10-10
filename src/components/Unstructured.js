@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 
+import quip1 from '../images/quip-1.gif';
+import quip2 from '../images/quip-2.gif';
+import quip3 from '../images/quip-3.gif';
 class Unstructured extends Component {
   render() {
     return (
@@ -36,8 +39,9 @@ class Unstructured extends Component {
         </div>
         <p>Deliver a simple, digestible, prominent way for users to see the connected Salesforce records when viewing embedded or associated documents in Quip. This project makes it possible for users in Quip to see the Salesforce records associated with the document, and attach documents to Salesforce records from within Quip.</p>
 
-        [image of quip home is hover]
-        [image of share modal]
+        <div className="gif-container">
+          <img src={quip1} alt="" />
+        </div>
 
         <h3>Activity Logging</h3>
         <div className="project-details">
@@ -45,9 +49,9 @@ class Unstructured extends Component {
         </div>
         <p>End users are required to log all activity into Salesforce for reporting and project tracking. After taking meeting notes, users have to to go through a tedious process to post logged calls and activities. By enabling activity logging straight from Quip, efficiency and workflows are significantly improved.</p>
 
-        [image of workspace]
-        [image of modal]
-        [image of update conversation feed]
+        <div className="gif-container">
+          <img src={quip2} alt="" />
+        </div>
 
         <h3>Smart Record Updating</h3>
         <div className="project-details">
@@ -55,8 +59,9 @@ class Unstructured extends Component {
         </div>
         <p>Deliver a truly integrated experience between Quip and CRM that enables natural language updates into Salesforce via the Einstein Assistant Application Platform.Plus, improve Quip+Salesforce story by finally delivering on an end user experience that optimizes for the way sales and service reps work naturally. Creating a natural pipeline of Sales customers looking at the value proposition Quip gives them on top of team selling. </p>
 
-        [image Einstein card]
-        [image Einstein inline]
+        <div className="gif-container">
+          <img src={quip3} alt="" />
+        </div>
       </div>
     );
   }

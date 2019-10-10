@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 
+import timeline1 from '../images/timeline-1.png';
+import timeline2 from '../images/timeline-2.png';
+import timeline3 from '../images/timeline-3.png';
+
 class Timeline extends Component {
   render() {
     return (
@@ -11,13 +15,13 @@ class Timeline extends Component {
           <p><b>Role:</b> Lead Product Designer</p>
           <p><b>Status:</b> Waiting for Resources</p>
           <p><b>Time Frame:</b> Started February 2019</p>
-          <p><b>Execution:</b> Product Definition, User Research, High Fidelity Mocks </p>
+          <p><b>Execution:</b> Product Definition, Sketching, User Research, High Fidelity Mocks </p>
         </div>
         
         <h3 className="first">Problem Statement </h3>
         <p>When reviewing activity in Salesforce, logged calls, meetings, tasks, and emails are simply not enough to give the user a clear understanding of how a relationship or project is progressing. Users need a central hub to see what happened on the account last, what is happening next, and what they can do to move the needle. Without activity insights alongside other related updates, users loose context and transparency into the overall business process.</p>
         
-        [image of old timeline]
+        <img src={timeline1} alt="" />
         
         <h3>Research showed</h3>
         <p>One on one interviews with 10 end users to understand what improvements need to be made.</p>
@@ -30,8 +34,10 @@ class Timeline extends Component {
         </ul>
         
         <h3>Solution explorations</h3>
+        <img src={timeline2} alt="" />
         
-        [image wireframe sketches]
+        <h3>High Fidelity Mocks</h3>
+        <img src={timeline3} alt="" />
       </div>
     );
   }
