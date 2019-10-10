@@ -9,12 +9,12 @@ class Timeline extends Component {
     return (
       <div className="timeline">
         <h1>Ashlyn Aiu</h1>
-        <h2>Unstructured to Structured Data in Quip</h2>
+        <h2>Salesforce Industries Timeline Redesign</h2>
         <div className="project-details">
-          <p><b>Team:</b> Financial Services Cloud</p>
+          <p><b>Team:</b> Industries Cloud</p>
           <p><b>Role:</b> Lead Product Designer</p>
           <p><b>Status:</b> Waiting for Resources</p>
-          <p><b>Time Frame:</b> Started February 2019</p>
+          <p><b>Time Frame:</b> August 2018 - November 2018</p>
           <p><b>Execution:</b> Product Definition, Sketching, User Research, High Fidelity Mocks </p>
         </div>
         
