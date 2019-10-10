@@ -30,12 +30,15 @@ class Unstructured extends Component {
         <h3>Project Goals</h3>
         <ul>
           <li>Clear linking between collaboration/productivity space and relevant Salesforce records.</li>
+          <li>Efficient workflows that encourage users to save data back to Salesforce.</li>
           <li>Seamless Salesforce activity logging, record updating, note taking and collaboration: providing the most important 5% of Salesforce capabilities.</li>
         </ul>
 
+        <h3>Project Pieces</h3>
+        <p>Rather than one specific feature, this project required multiple pieces to achieve a successful solution. The Product Manager and I broke down the project into these pieces. </p>
         <h3>Record and Document Linking</h3>
         <div className="project-details">
-          <p><b>Status:</b> Shipped</p>
+          <p><span className="highlight">Status:</span> Shipped</p>
         </div>
         <p>Deliver a simple, digestible, prominent way for users to see the connected Salesforce records when viewing embedded or associated documents in Quip. This project makes it possible for users in Quip to see the Salesforce records associated with the document, and attach documents to Salesforce records from within Quip.</p>
 
@@ -45,7 +48,7 @@ class Unstructured extends Component {
 
         <h3>Activity Logging</h3>
         <div className="project-details">
-          <p><b>Status:</b> Shipped</p>
+          <p><span className="highlight">Status:</span> Shipped</p>
         </div>
         <p>End users are required to log all activity into Salesforce for reporting and project tracking. After taking meeting notes, users have to to go through a tedious process to post logged calls and activities. By enabling activity logging straight from Quip, efficiency and workflows are significantly improved.</p>
 
@@ -55,7 +58,7 @@ class Unstructured extends Component {
 
         <h3>Smart Record Updating</h3>
         <div className="project-details">
-          <p><b>Status:</b> Design Iteration</p>
+          <p><span className="highlight">Status:</span> Design Iteration</p>
         </div>
         <p>Deliver a truly integrated experience between Quip and CRM that enables natural language updates into Salesforce via the Einstein Assistant Application Platform.Plus, improve Quip+Salesforce story by finally delivering on an end user experience that optimizes for the way sales and service reps work naturally. Creating a natural pipeline of Sales customers looking at the value proposition Quip gives them on top of team selling. </p>
 

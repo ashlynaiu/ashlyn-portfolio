@@ -1,2 +1,161 @@
-@import Common.sass
-@import Icons.sass
+////////////////////
+/////Variables/////
+//////////////////
+
+$desktop-padding: 20px
+$frame-desktop: 820px
+$text-color-standard: #5B6675
+$secondary-text: #745486
+$main-link-color: #9F68AA
+$background-color: #FFF
+$break-medium: 1000px
+
+/////////////////
+/////Resets/////
+///////////////
+*
+  margin: 0
+  padding: 0
+  border: none
+  border-radius: none
+
+body
+  zoom: 1
+
+#root
+  height: 100%
+
+html, body
+  min-height: 100%
+  height: 100%
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+  color: $text-color-standard
+  background-repeat: no-repeat
+
+input, select, textarea, button, a
+  outline: none
+  font-family: inherit
+  box-sizing: border-box
+
+textarea
+  -webkit-overflow-scrolling: touch
+
+
+button
+  padding: 8px 16px
+  cursor: pointer
+  border-radius: 4px
+  background-color: #fff
+  color: $background-color
+  font-size: 16px
+
+h1
+  font-size: 8vw
+  line-height: 120%
+  font-weight: 300
+  margin-bottom: 20px
+
+h2
+  font-size: 3vw
+  line-height: 120%
+  font-weight: 300
+  margin-bottom: 20px
+  -webkit-font-smoothing: antialiased
+  @media only screen and (max-width: $break-medium - 1)
+    font-size: 4vw
+
+h3
+  font-size: 22px
+  line-height: 28px
+  font-weight: 300
+  margin-bottom: 14px
+  color: $main-link-color
+  -webkit-font-smoothing: antialiased
+
+h4
+  font-size: 18px
+  line-height: 26px
+  font-weight: 400
+  margin-bottom: 10px
+  -webkit-font-smoothing: antialiased
+
+a
+  color: $main-link-color
+  img
+    outline-color: none
+  &:hover
+    text-decoration: none
+
+p
+  font-size: 18px
+  line-height: 150%
+  font-weight: 300
+  margin-bottom: 20px
+  @media only screen and (max-width: $break-medium - 1)
+    font-size: 16px
+  b
+    color: $main-link-color
+  span.highlight
+    color: $main-link-color
+ul
+  margin-bottom: 20px
+  padding-left: 20px
+  li
+    font-size: 18px
+    line-height: 120%
+    font-weight: 300
+    margin-bottom: 10px
+
+img
+  width: 100%
+  margin-bottom: 26px
+
+.mainContainer
+  height: 100%
+  width: 60%
+  margin: 3rem auto
+  padding: 3rem
+  background: #fff
+  @media only screen and (max-width: $break-medium - 1)
+    margin: 2rem auto
+    padding: 2rem
+    width: 70%
+
+
+.first, nav
+  padding-top: 20px
+  margin-top: 20px
+  border-top: 1px solid $main-link-color
+
+.project-details
+  p
+    margin-bottom: 8px
+
+.gif-container
+  display: flex
+  justify-content: center
+  img
+    width: 80%
+    height: 100%
+    @media only screen and (max-width: $break-medium - 1)
+      width: 100%
+
+.photo-grid
+  .row
+    display: flex
+    justify-content: space-between
+    img
+      width: 48%
+
+footer
+  ul
+    display: flex
+    justify-content: center
+    align-content: center
+    margin-top: 30px
+    li
+      display: inline
+      padding: 0 10px
+      a, i
+        display: block
+        color: $main-link-color
