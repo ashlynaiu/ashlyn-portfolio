@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-//import ScrollToTop from './helpers/ScrollToTop';
+import ScrollToTop from './helpers/ScrollToTop';
 
 import Footer from './components/Footer';
 import Nav from './components/Nav';
@@ -28,7 +28,7 @@ class App extends Component {
       <div className="mainContainer">
         <Router>
           <div className="mainContent">
-            
+          <ScrollToTop />
             <Route exact={true} path="/" component={Home} />
             <Route path="/unstructured" component={() => <Unstructured changePageState={this.changePageState}/>} />
             <Route path="/timeline" component={() => <Timeline changePageState={this.changePageState}/>} />

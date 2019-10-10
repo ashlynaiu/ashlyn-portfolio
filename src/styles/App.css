@@ -45,10 +45,9 @@ h2 {
   font-weight: 300;
   margin-bottom: 20px;
   -webkit-font-smoothing: antialiased; }
-
-@media only screen and (max-width: 999px) {
-  h2 {
-    font-size: 4vw; } }
+  @media only screen and (max-width: 999px) {
+    h2 {
+      font-size: 4vw; } }
 
 h3 {
   font-size: 22px;
@@ -66,31 +65,27 @@ h4 {
 
 a {
   color: #745486; }
-
-a img {
-  outline-color: none; }
-
-a:hover {
-  text-decoration: none; }
+  a img {
+    outline-color: none; }
+  a:hover {
+    text-decoration: none; }
 
 p {
   font-size: 18px;
   line-height: 150%;
   font-weight: 300;
   margin-bottom: 20px; }
-
-@media only screen and (max-width: 999px) {
-  p {
-    font-size: 16px; } }
+  @media only screen and (max-width: 999px) {
+    p {
+      font-size: 16px; } }
 
 ul {
   margin-bottom: 20px;
   padding-left: 20px; }
-
-ul li {
-  font-size: 18px;
-  line-height: 150%;
-  font-weight: 300; }
+  ul li {
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 300; }
 
 .mainContainer {
   height: 100%;
@@ -98,12 +93,11 @@ ul li {
   margin: 3rem auto;
   padding: 3rem;
   background: #fff; }
-
-@media only screen and (max-width: 999px) {
-  .mainContainer {
-    margin: 2rem auto;
-    padding: 2rem;
-    width: 70%; } }
+  @media only screen and (max-width: 999px) {
+    .mainContainer {
+      margin: 2rem auto;
+      padding: 2rem;
+      width: 70%; } }
 
 .first {
   padding-top: 20px;
@@ -118,13 +112,11 @@ footer ul {
   justify-content: center;
   align-content: center;
   margin-top: 30px; }
-
-footer ul li {
-  display: inline;
-  padding: 0 10px; }
-
-footer ul li a, footer ul li i {
-  display: block; }
+  footer ul li {
+    display: inline;
+    padding: 0 10px; }
+    footer ul li a, footer ul li i {
+      display: block; }
 
 .svg-port-triangle, .svg-homepage-down-arrow, .svg-homepage-go-arrow, .svg-port-social-tumblr, .svg-port-social-twitter, .svg-port-social-linkedin, .svg-port-social-github, .svg-port-social-dribbble {
   background-repeat: no-repeat; }
