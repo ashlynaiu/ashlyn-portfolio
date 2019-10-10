@@ -45,10 +45,9 @@ h2 {
   font-weight: 300;
   margin-bottom: 20px;
   -webkit-font-smoothing: antialiased; }
-
-@media only screen and (max-width: 999px) {
-  h2 {
-    font-size: 4vw; } }
+  @media only screen and (max-width: 999px) {
+    h2 {
+      font-size: 4vw; } }
 
 h3 {
   font-size: 22px;
@@ -67,41 +66,36 @@ h4 {
 
 a {
   color: #9F68AA; }
-
-a img {
-  outline-color: none; }
-
-a:hover {
-  text-decoration: none; }
+  a img {
+    outline-color: none; }
+  a:hover {
+    text-decoration: none; }
 
 p {
   font-size: 18px;
   line-height: 150%;
   font-weight: 300;
   margin-bottom: 20px; }
-
-@media only screen and (max-width: 999px) {
-  p {
-    font-size: 16px; } }
-
-p b {
-  color: #9F68AA; }
-
-p span.highlight {
-  color: #9F68AA; }
+  @media only screen and (max-width: 999px) {
+    p {
+      font-size: 16px; } }
+  p b {
+    color: #9F68AA; }
+  p span.highlight {
+    color: #9F68AA; }
 
 ul {
   margin-bottom: 20px;
   padding-left: 20px; }
-
-ul li {
-  font-size: 18px;
-  line-height: 120%;
-  font-weight: 300;
-  margin-bottom: 10px; }
+  ul li {
+    font-size: 18px;
+    line-height: 120%;
+    font-weight: 300;
+    margin-bottom: 10px; }
 
 img {
   width: 100%;
+  height: 100%;
   margin-bottom: 26px; }
 
 .mainContainer {
@@ -110,12 +104,11 @@ img {
   margin: 3rem auto;
   padding: 3rem;
   background: #fff; }
-
-@media only screen and (max-width: 999px) {
-  .mainContainer {
-    margin: 2rem auto;
-    padding: 2rem;
-    width: 70%; } }
+  @media only screen and (max-width: 999px) {
+    .mainContainer {
+      margin: 2rem auto;
+      padding: 2rem;
+      width: 70%; } }
 
 .first, nav {
   padding-top: 20px;
@@ -128,32 +121,31 @@ img {
 .gif-container {
   display: flex;
   justify-content: center; }
-
-.gif-container img {
-  width: 80%;
-  height: 100%; }
-
-@media only screen and (max-width: 999px) {
   .gif-container img {
-    width: 100%; } }
+    width: 80%; }
+    @media only screen and (max-width: 999px) {
+      .gif-container img {
+        width: 100%; } }
 
 .photo-grid .row {
   display: flex;
   justify-content: space-between; }
-
-.photo-grid .row img {
-  width: 48%; }
+  .photo-grid .row img {
+    width: 48%; }
+  @media only screen and (max-width: 999px) {
+    .photo-grid .row {
+      display: block; }
+      .photo-grid .row img {
+        width: 100%; } }
 
 footer ul {
   display: flex;
   justify-content: center;
   align-content: center;
   margin-top: 30px; }
-
-footer ul li {
-  display: inline;
-  padding: 0 10px; }
-
-footer ul li a, footer ul li i {
-  display: block;
-  color: #9F68AA; }
+  footer ul li {
+    display: inline;
+    padding: 0 10px; }
+    footer ul li a, footer ul li i {
+      display: block;
+      color: #9F68AA; }
