@@ -24,7 +24,6 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.state.page)
     return (
       <div className="mainContainer">
         <Router>
