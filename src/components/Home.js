@@ -10,7 +10,7 @@ class Home extends Component {
 
           <p>While Product Design is my main focus now, I was previously a UI Engineer at <a href="https://www.zenefits.com/" target="_blank" rel="noopener noreferrer">Zenefits</a> and also got to wear numerous hats at iCracked as a Designer and Engineer. I enjoy being apart of the entire product lifecycle; from inital customer discovery and research to creating React prototypes and high fidelity mocks.</p>
 
-          <p>These case studies are just quick glimpses into my favorite problems and solutions I have tackled over the last five years. Please reach out through <a href="https://www.linkedin.com/pub/ashlyn-aiu/42/56b/60a" target="_blank" rel="noopener noreferrer">Linkedin</a> to learn more about my process and projects.</p>
+          <p>These case studies are just quick glimpses into my favorite problems and solutions I have tackled over the last five years. Please reach out through <a href="https://www.linkedin.com/in/ashlyn-watters" target="_blank" rel="noopener noreferrer">Linkedin</a> to learn more about my process and projects.</p>
         </div>
     );
   }
