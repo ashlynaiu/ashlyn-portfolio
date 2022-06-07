@@ -1,5 +1,5 @@
 ## Portfolio Website Repo
-Working to revamp site from old AngularJS code to React.
+Build with React
 
 ## Run Locally
 ```
@@ -8,4 +8,4 @@ npm start
 ```
 
 ## Live
-http://ashlynaiu.com/
+http://ashlynwatters.com/

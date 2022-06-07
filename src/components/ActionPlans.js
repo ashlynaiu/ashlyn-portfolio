@@ -7,7 +7,7 @@ class ActionPlans extends Component {
   render() {
     return (
       <div className="unstructured">
-        <h1>Ashlyn Aiu</h1>
+        <h1>Ashlyn Watters</h1>
         <h2>Action Plans Version 2</h2>
 
         <div className="project-details">

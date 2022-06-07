@@ -8,7 +8,7 @@ class Timeline extends Component {
   render() {
     return (
       <div className="timeline">
-        <h1>Ashlyn Aiu</h1>
+        <h1>Ashlyn Watters</h1>
         <h2>Timeline Redesign</h2>
         <div className="project-details">
           <p><b>Team:</b> Salesforce Industries Cloud</p>

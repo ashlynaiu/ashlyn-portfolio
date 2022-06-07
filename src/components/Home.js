@@ -4,7 +4,7 @@ class Home extends Component {
   render() {
     return (
         <div className="homepage">
-          <h1>Ashlyn Aiu</h1>
+          <h1>Ashlyn Watters</h1>
           <h2>Product Designer and UX/UI Engineer</h2>
           <p className="first">Currently I am a Architect of Product Design for <a href="https://appexchange.salesforce.com/" target="_blank" rel="noopener noreferrer">AppExchange</a>, Salesforce's Enterprise App Marketplace. Before AppExchange I was a Product Design Lead at <a href="https://quip.com/" target="_blank" rel="noopener noreferrer">Quip</a> where I helped the Product team reimagined how collaboration and siloed CRM data might intersect. I was also one of the first designers on <a href="https://www.salesforce.com/products/financial-services-cloud/overview/" target="_blank" rel="noopener noreferrer">Financial Services Cloud</a> where I helped define and design their 5 year roadmap. </p>
 
