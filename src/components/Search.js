@@ -26,15 +26,15 @@ class Search extends Component {
 
         <p><b>Poor new user onboarding</b> - Customers don't understand best practices to search and browse for the most relevant apps  aligned to their industry, products, and use cases.</p>
 
-        <p><b>Lack of Personalization</b> - AppExchange does not meet industry marketplace standards to provide curated personalization and recommendations to help guide users on industry and use case best practices and trends. Customers rely on external sources to learn how to solve their use cases, rather than using AppExchange as a trusted source of information and solution browsing.</p>
+        <p><b>Lack of Personalization</b> - AppExchange does not meet industry marketplace standards to provide curated personalization and recommendations to help guide users on how to use the marketplace. Customers rely on external sources to learn how to solve their use cases, rather than using AppExchange as a trusted source of information and solution browsing.</p>
 
-        <p><b>Lack of Filtering Options and Consistency</b> - With thousands of solutions on AppExchange, customers don't currently have robust and clear filtering patterns to browse the most relevant apps. Filtering should be as complex or simple as our customers need to find exactly what they are looking for.</p>
+        <p><b>Lack of Filtering Options and Consistency</b> - With thousands of solutions on AppExchange, customers don't currently have robust and clear filtering patterns to find the most relevant apps. Filtering should be as complex or simple as our customers need to find exactly what they are looking for.</p>
 
         <h3>Persona</h3>
         <p>The most interesting aspect of picking apart the user research for this project was that we discovered that what mattered more than persona definition was persona mindsets. Based on factors like Salesforce product familiarity and where the user was in their discovery journey, I started to realized that the expectations of the marketplace shifted greatly. While the business admin was our key persona, I ended up breaking this persona into 3 mindsets (Prospect, Explorer, Super User) with their own Jobs to Be Done.</p>
 
         <h3>Project Goals</h3>
-        <p>For this project, I was tasked with reimagining what the user discovery journey for apps on the marketplace. From new users to super users, AppExchange should be a relevant resource for customers to expand their Salesforce ecosystem to do more.</p>
+        <p>For this project, I was tasked with reimagining the user discovery journey for apps on the marketplace. From new users to super users, AppExchange should be a relevant resource for customers to expand their Salesforce ecosystem to do more.</p>
 
         <h3>Project Pieces</h3>
         <p>While this epic encompasses six distinct project areas that I have lead the vision around, I’ve currently lead two projects from complete inception to launch. </p>
