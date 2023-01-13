@@ -17,7 +17,7 @@ class Search extends Component {
           <p><b>Role:</b> Product Design Architect</p>
           <p><b>Status:</b> MVP Launched</p>
           <p><b>Time Frame:</b> Approximately May 2021 - October 2022</p>
-          <p><b>Execution:</b> Product Definition, User Research, User Story Mapping and User Flows, Wireframes, High Fidelity Mock</p>
+          <p><b>Execution:</b> Product Definition, User Research, User Story Mapping and User Flows, Wireframes, and High Fidelity Mocks</p>
         </div>
 
         <h3 className="first">Problem Statement</h3>
@@ -43,7 +43,7 @@ class Search extends Component {
         <div className="project-details">
           <p><span className="highlight">Status:</span> Phase 1 Launched</p>
         </div>
-        <p>Regardless of authentication status or Salesforce product experience, AppExchange will begin to surface search term and app recommendations before the users has even started typing. By pulling user activity and profile data, our search bar will displaying relevant industry apps that will help all users kick off a meaningful search experience.</p>
+        <p>Regardless of authentication status or Salesforce product experience, AppExchange will begin to surface search term and app recommendations before the users has even started typing. By pulling user activity and profile data, our search bar will display relevant industry apps that will help all users kick off a meaningful search experience.</p>
 
         <div className="photo-grid">
           <div className="row">
@@ -56,9 +56,9 @@ class Search extends Component {
         <div className="project-details">
           <p><span className="highlight">Status:</span> Phase 1 Launched</p>
         </div>
-        <p>This project eliminates the existence of the three distinct search result page layouts; all with different filtering and sorting functionality. The new designs align the search experiences across the site to have a cohesive design that is expected, familiar, and robust.</p>
+        <p>This project eliminates the existence of the three distinct search result page experiences; all with different filtering and sorting functionality. The new designs align the search experiences across the site to have a cohesive design that is expected, familiar, and robust.</p>
 
-        <p>The design proposal also included plans to enables improved filtering options that more closely align with customer expectations and priorities. </p>
+        <p>The design proposal also included plans to enables improved filtering options that more closely align with customer expectations and priorities that was uncovered through our user research. </p>
 
         <div className="photo-grid">
           <div className="row">
