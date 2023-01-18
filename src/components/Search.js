@@ -22,7 +22,7 @@ class Search extends Component {
 
         <h3 className="first">Problem Statement</h3>
 
-        <p>The AppExchange marketplace was considered a legacy, enterprise marketplace that struggled to engage its customers. Through qualitative and quantitive data, it was uncovered that customers were using outside communities to find apps that might solve their business problems. We discovered that customer have these 3 main pain points with using AppExchange:</p>
+        <p>The AppExchange marketplace was considered a legacy, enterprise marketplace that struggled to engage its customers. Through qualitative and quantitive data, it was uncovered that customers were using outside communities to find apps that might solve their business problems. We discovered that customers have these 3 main pain points with using AppExchange:</p>
 
         <p><b>Poor new user onboarding</b> - Customers don't understand best practices to search and browse for the most relevant apps  aligned to their industry, products, and use cases.</p>
 
@@ -37,7 +37,7 @@ class Search extends Component {
         <p>For this project, I was tasked with reimagining the user discovery journey for apps on the marketplace. From new users to super users, AppExchange should be a relevant resource for customers to expand their Salesforce ecosystem to do more.</p>
 
         <h3>Project Pieces</h3>
-        <p>While this epic encompasses six distinct project areas that I have lead the vision around, I’ve currently lead two projects from complete inception to launch. </p>
+        <p>While this epic encompasses six distinct project areas that I have lead the vision around, I've currently lead two projects from complete inception to launch. </p>
 
         <h3>Personalized Search Bar </h3>
         <div className="project-details">
@@ -45,11 +45,8 @@ class Search extends Component {
         </div>
         <p>Regardless of authentication status or Salesforce product experience, AppExchange will begin to surface search term and app recommendations before the users has even started typing. By pulling user activity and profile data, our search bar will display relevant industry apps that will help all users kick off a meaningful search experience.</p>
 
-        <div className="photo-grid">
-          <div className="row">
+        <div className="single-photos">
             <img src={search1} alt="" />
-            <img src={search2} alt="" />
-          </div>
         </div>
 
         <h3>Simplified Search Results and Filtering</h3>
@@ -60,11 +57,9 @@ class Search extends Component {
 
         <p>The design proposal also included plans to enables improved filtering options that more closely align with customer expectations and priorities that was uncovered through our user research. </p>
 
-        <div className="photo-grid">
-          <div className="row">
+        <div className="single-photos">
             <img src={search3} alt="" />
             <img src={search4} alt="" />
-          </div>
         </div>
       </div>
     );

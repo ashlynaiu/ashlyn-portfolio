@@ -28,14 +28,14 @@ class Templates extends Component {
 
         <p>This project was exceptionally large where a PM and I uncovered a plethora of pain points all under an umbrella theme of templated documents. These were the big picture problems we discovered through our research.</p>
 
-        <p><i>Template creators also known as Business Admins:</i></p>
+        <p><b>Template creators also known as Business Admins:</b></p>
         <ul>
             <li> Didn't have a good method for managing and organizing templates they wanted to surface to the organization.</li>
             <li>Needed extreme flexibility in template creation because a one-size-fits-all was resulting in poor adoption of their templates.</li>
             <li>Find it difficult to get end users in Quip to adopt best practices of linking Quip documents to Salesforce records for improved reporting.</li>
         </ul>
 
-        <p><i>Template end users:</i></p>
+        <p><b>Template end users:</b></p>
         <ul>
             <li>Couldn't easily customize or create their own templates that are better suited to their needs.</li>
             <li>Cloning and populating templates with Salesforce data is very manual and repetitive</li>
@@ -77,7 +77,7 @@ class Templates extends Component {
         <div className="project-details">
           <p><span className="highlight">Status:</span> Shipped</p>
         </div>
-        <p>This project resulted in a series of sketched prototypes and design guidelines for how the engineers would implement and scale Salesforce automation triggers. The sketches allowed the engineers to feel empowered to give me fast, iterative feedback and did not require custom components. Allowing for scale of API calls was incredibly important. Once the UI and API was launched, it would not be possible to change. I unforuntely don't have any interesting sketches to share for this one! A lot of them ended up being on whiteboards.</p>
+        <p>This project resulted in a series of sketched prototypes and design guidelines for how the engineers would implement and scale Salesforce automation triggers. The sketches allowed the engineers to feel empowered to give me fast, iterative feedback and did not require custom components. Allowing for scaling of API calls was incredibly important. Once the UI and API was launched, it would not be possible to change. I unforuntely don't have any interesting sketches to share for this one! A lot of them ended up being on whiteboards.</p>
 
         <h3>Salesforce Admin Setup</h3>
         <div className="project-details">

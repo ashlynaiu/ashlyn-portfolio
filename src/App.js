@@ -36,7 +36,6 @@ class App extends Component {
             <Route path="/templates" component={() => <Templates changePageState={this.changePageState}/>} />
             <Route path="/unstructured" component={() => <Unstructured changePageState={this.changePageState}/>} />
             <Route path="/timeline" component={() => <Timeline changePageState={this.changePageState}/>} />
-            <Route path="/action-plan" component={() => <ActionPlans changePageState={this.changePageState}/>} />
           </div>
           <Nav changePageState={this.changePageState} page={this.state.page} />
         </Router>
