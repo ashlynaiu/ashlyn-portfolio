@@ -5,7 +5,6 @@ class App extends Component {
     return (
       <footer>
         <ul>
-          <li><a href="https://twitter.com/ashlynaiu" rel="noopener noreferrer" target="_blank"><i className="fab fa-twitter"></i></a></li>
           <li><a href="https://www.linkedin.com/in/ashlyn-watters" rel="noopener noreferrer" target="_blank"><i className="fab fa-linkedin"></i></a></li>
           <li><a href="https://github.com/ashlynaiu" rel="noopener noreferrer" target="_blank"><i className="fab fa-github"></i></a></li>
         </ul>
