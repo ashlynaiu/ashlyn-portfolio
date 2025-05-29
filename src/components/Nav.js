@@ -5,7 +5,7 @@ class Nav extends Component {
   render() {
     return (
       <nav>
-        <h3>Projects</h3>
+        <h3>Past Projects</h3>
         <h4><Link to="/search" onClick={() => this.props.changePageState('search')}>Discovery on a Legacy Marketplace</Link></h4>
         <h4><Link to="/templates" onClick={() => this.props.changePageState('templates')}>Automated Quip Templates</Link></h4>
         <h4><Link to="/unstructured" onClick={() => this.props.changePageState('unstructured')}>Unstructured to Structured Data in Quip</Link></h4>
