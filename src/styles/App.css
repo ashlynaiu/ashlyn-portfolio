@@ -2,9 +2,7 @@
   margin: 0;
   padding: 0;
   border: none;
-  border-radius: none; }
-
-body {
+  border-radius: none;
   zoom: 1; }
 
 #root {
@@ -116,6 +114,7 @@ img {
   max-width: 900px;
   margin: 3rem auto;
   padding: 3rem;
+  padding-bottom: 120px;
   background: #fff; }
 
 @media only screen and (max-width: 999px) {
@@ -180,3 +179,16 @@ footer ul li {
 footer ul li a, footer ul li i {
   display: block;
   color: #9F68AA; }
+
+footer ul .icon {
+  padding-top: 4px; }
+
+footer ul .resume {
+  font-size: 16px;
+  padding: 2px 8px 2px 8px;
+  border: 1px solid #9F68AA;
+  border-radius: 12px;
+  margin-left: 8px; }
+
+footer ul .resume span {
+  font-size: 12px; }
