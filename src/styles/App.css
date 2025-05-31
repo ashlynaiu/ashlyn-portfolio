@@ -171,9 +171,9 @@ footer {
 
 footer ul {
   display: flex;
-  justify-content: center;
   align-content: center;
-  margin-top: 30px; }
+  margin: 0;
+  padding: 0; }
 
 footer ul li {
   display: inline;
