@@ -129,7 +129,7 @@ img
     width: 70%
 
 
-.first, nav
+.first, nav, footer
   padding-top: 20px
   margin-top: 48px
   border-top: 1px solid $main-link-color
@@ -167,7 +167,9 @@ img
   @media only screen and (max-width: $break-medium - 1)
     img
       width: 100%
+
 footer
+  padding-bottom: 64px
   ul
     display: flex
     justify-content: center
@@ -179,6 +181,9 @@ footer
       a, i
         display: block
         color: $main-link-color
+        transition: color 1s ease 
+        &:hover
+          color: $text-color-standard
     .icon
       padding-top: 4px
     .resume
@@ -187,5 +192,13 @@ footer
       border: 1px solid $main-link-color
       border-radius: 12px
       margin-left: 8px
+      transition: color .5s ease-in-out, background-color .5s ease-in-out
+      a
+        text-decoration: none
       span
         font-size: 12px
+      &:hover
+        background-color: $main-link-color
+        a, i
+          color: #fff
+      
