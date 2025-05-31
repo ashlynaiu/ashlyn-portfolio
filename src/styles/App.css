@@ -43,10 +43,9 @@ h2 {
   font-weight: 300;
   margin-bottom: 20px;
   -webkit-font-smoothing: antialiased; }
-
-@media only screen and (max-width: 999px) {
-  h2 {
-    font-size: 4vw; } }
+  @media only screen and (max-width: 999px) {
+    h2 {
+      font-size: 4vw; } }
 
 h3 {
   font-size: 22px;
@@ -66,42 +65,35 @@ h4 {
 
 a {
   color: #9F68AA; }
-
-a img {
-  outline-color: none; }
-
-a:hover {
-  text-decoration: none; }
+  a img {
+    outline-color: none; }
+  a:hover {
+    text-decoration: none; }
 
 p {
   font-size: 18px;
   line-height: 150%;
   font-weight: 300;
   margin-bottom: 20px; }
-
-@media only screen and (max-width: 999px) {
-  p {
-    font-size: 16px; } }
-
-p b {
-  color: #9F68AA;
-  font-weight: 500; }
-
-p b.standard {
-  color: #5B6675; }
-
-p span.highlight {
-  color: #9F68AA; }
+  @media only screen and (max-width: 999px) {
+    p {
+      font-size: 16px; } }
+  p b {
+    color: #9F68AA;
+    font-weight: 500; }
+  p b.standard {
+    color: #5B6675; }
+  p span.highlight {
+    color: #9F68AA; }
 
 ul {
   margin-bottom: 20px;
   padding-left: 20px; }
-
-ul li {
-  font-size: 18px;
-  line-height: 150%;
-  font-weight: 300;
-  margin-bottom: 10px; }
+  ul li {
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 300;
+    margin-bottom: 10px; }
 
 img {
   width: 100%;
@@ -116,12 +108,11 @@ img {
   padding: 3rem;
   padding-bottom: 120px;
   background: #fff; }
-
-@media only screen and (max-width: 999px) {
-  .mainContainer {
-    margin: 2rem auto;
-    padding: 2rem;
-    width: 70%; } }
+  @media only screen and (max-width: 999px) {
+    .mainContainer {
+      margin: 2rem auto;
+      padding: 2rem;
+      width: 70%; } }
 
 .first, nav, footer {
   padding-top: 20px;
@@ -134,27 +125,23 @@ img {
 .gif-container {
   display: flex;
   justify-content: center; }
-
-.gif-container img {
-  width: 80%; }
-
-@media only screen and (max-width: 999px) {
   .gif-container img {
-    width: 100%; } }
+    width: 80%; }
+    @media only screen and (max-width: 999px) {
+      .gif-container img {
+        width: 100%; } }
 
 .photo-grid .row {
   display: flex;
   justify-content: space-between;
   margin-bottom: 24px; }
-
-.photo-grid .row img {
-  width: 48%; }
-
-@media only screen and (max-width: 999px) {
-  .photo-grid .row {
-    display: block; }
   .photo-grid .row img {
-    width: 100%; } }
+    width: 48%; }
+  @media only screen and (max-width: 999px) {
+    .photo-grid .row {
+      display: block; }
+      .photo-grid .row img {
+        width: 100%; } }
 
 .single-photos img {
   margin-bottom: 24px;
@@ -168,44 +155,34 @@ img {
 
 footer {
   padding-bottom: 64px; }
-
-footer ul {
-  display: flex;
-  align-content: center;
-  margin: 0;
-  padding: 0; }
-
-footer ul li {
-  display: inline;
-  padding: 0 10px; }
-
-footer ul li a, footer ul li i {
-  display: block;
-  color: #9F68AA;
-  transition: color 1s ease; }
-
-footer ul li a:hover, footer ul li i:hover {
-  color: #5B6675; }
-
-footer ul .icon {
-  padding-top: 4px; }
-
-footer ul .resume {
-  font-size: 16px;
-  padding: 2px 8px 2px 8px;
-  border: 1px solid #9F68AA;
-  border-radius: 12px;
-  margin-left: 8px;
-  transition: color .5s ease-in-out, background-color .5s ease-in-out; }
-
-footer ul .resume a {
-  text-decoration: none; }
-
-footer ul .resume span {
-  font-size: 12px; }
-
-footer ul .resume:hover {
-  background-color: #9F68AA; }
-
-footer ul .resume:hover a, footer ul .resume:hover i {
-  color: #fff; }
+  footer ul {
+    display: flex;
+    align-content: center;
+    margin: 0;
+    padding: 0; }
+    footer ul li {
+      display: inline;
+      padding: 0 10px; }
+      footer ul li a, footer ul li i {
+        display: block;
+        color: #9F68AA;
+        transition: color 1s ease; }
+        footer ul li a:hover, footer ul li i:hover {
+          color: #5B6675; }
+    footer ul .icon {
+      padding-top: 4px; }
+    footer ul .resume {
+      font-size: 16px;
+      padding: 2px 8px 2px 8px;
+      border: 1px solid #9F68AA;
+      border-radius: 6px;
+      margin-right: 8px;
+      transition: color .5s ease-in-out, background-color .5s ease-in-out; }
+      footer ul .resume a {
+        text-decoration: none; }
+      footer ul .resume span {
+        font-size: 12px; }
+      footer ul .resume:hover {
+        background-color: #9F68AA; }
+        footer ul .resume:hover a, footer ul .resume:hover i {
+          color: #fff; }
